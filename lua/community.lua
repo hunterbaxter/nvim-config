@@ -16,6 +16,8 @@ return {
   { import = "astrocommunity.pack.rust", branch = "v4" },
   { import = "astrocommunity.pack.toml", branch = "v4" },
   { import = "astrocommunity.pack.python", branch = "v4" },
+  { import = "astrocommunity.pack.json", branch = "v4" },
+  { import = "astrocommunity.pack.html-css", branch = "v4" },
   -- editing support
   { import = "astrocommunity.editing-support.todo-comments-nvim", branch = "v4" },
   -- git
