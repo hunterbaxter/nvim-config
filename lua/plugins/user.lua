@@ -91,6 +91,25 @@ return {
     event = "User AstroFile",
     cmd = { "TodoTrouble", "TodoTelescope", "TodoLocList", "TodoQuickFix" },
   },
+  {
+    "smoka7/multicursors.nvim",
+    event = "VeryLazy",
+    dependencies = { "smoka7/hydra.nvim" },
+    opts = {},
+    keys = {
+      {
+        mode = { "v", "n" },
+        "<Leader>m",
+        "<cmd>MCunderCursor<cr>",
+        desc = "Create a MC under cursor",
+      },
+    },
+  },
+  {
+    "LudoPinelli/comment-box.nvim",
+    event = "User AstroFile",
+    opts = {},
+  },
   -- -- FIXME: this does not appear to be working, but its ok we barely ever use, but it is nice occasionally
   -- {
   --

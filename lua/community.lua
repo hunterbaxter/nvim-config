@@ -18,6 +18,7 @@ return {
   { import = "astrocommunity.pack.python", branch = "v4" },
   { import = "astrocommunity.pack.json", branch = "v4" },
   { import = "astrocommunity.pack.html-css", branch = "v4" },
+  { import = "astrocommunity.pack.bash", branch = "v4" },
   -- editing support
   { import = "astrocommunity.editing-support.todo-comments-nvim", branch = "v4" },
   -- git
@@ -27,4 +28,32 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim", branch = "v4" },
   { import = "astrocommunity.editing-support.zen-mode-nvim", branch = "v4" },
   -- { import = "astrocommunity.lsp.lsp-inlayhints-nvim", branch = "v4" },
+
+  -- Change option table for imported stuff
+  {
+    "nvim-pack/nvim-spectre",
+    opts = function()
+      return {
+        highlight = {
+          ui = "String",
+          search = "DiagnosticInfo",
+          replace = "DiagnosticWarn",
+        },
+      }
+    end,
+  },
+  {
+    -- community override
+    "smoka7/multicursors.nvim",
+    event = "VeryLazy",
+    dependencies = { "smoka7/hydra.nvim" },
+    opts = {
+      -- removing up/down bindings
+      normal_keys = {
+        ["k"] = { method = false },
+        ["j"] = { method = false },
+        ["z"] = { method = false },
+      },
+    },
+  },
 }
