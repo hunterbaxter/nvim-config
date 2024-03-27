@@ -19,6 +19,8 @@ return {
   { import = "astrocommunity.pack.json", branch = "v4" },
   { import = "astrocommunity.pack.html-css", branch = "v4" },
   { import = "astrocommunity.pack.bash", branch = "v4" },
+  { import = "astrocommunity.pack.terraform", branch = "v4" },
+
   -- editing support
   { import = "astrocommunity.editing-support.todo-comments-nvim", branch = "v4" },
   -- git
