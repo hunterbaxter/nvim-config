@@ -1,0 +1,33 @@
+{
+  "dbg!()": {
+    "prefix": "dbg",
+    "body": [
+      "dbg!($1);"
+    ]
+  },
+  "File Property": {
+    "prefix": "fpid",
+    "body": [
+      "FilePropertyId::$1"
+    ]
+  },
+  "File Property builder new": {
+    "prefix": "fpbn",
+    "body": [
+      "FilePropertyBuilder::new($1)",
+      "    .${2:value_type}()",
+      "    .author(${4:token.user_id})",
+      "    .build()?;\n"
+    ]
+  },
+  "Insert prelude reference": {
+    "scope": "rust",
+    "prefix": "prelude",
+    "body": "use crate::prelude::*;"
+  },
+  "Thread sleep": {
+    "scope": "rust",
+    "prefix": "sleep",
+    "body": "std::thread::sleep(std::time::Duration::from_secs($1));"
+  }
+}

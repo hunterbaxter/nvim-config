@@ -10,26 +10,25 @@ return {
   { "AstroNvim/astrocommunity", branch = "v4" },
 
   -- Colorschemes
-  { import = "astrocommunity.colorscheme.github-nvim-theme", branch = "v4" },
+  { import = "astrocommunity.colorscheme.github-nvim-theme" },
   -- Langs
-  { import = "astrocommunity.pack.lua", branch = "v4" },
-  { import = "astrocommunity.pack.rust", branch = "v4" },
-  { import = "astrocommunity.pack.toml", branch = "v4" },
-  { import = "astrocommunity.pack.python", branch = "v4" },
-  { import = "astrocommunity.pack.json", branch = "v4" },
-  { import = "astrocommunity.pack.html-css", branch = "v4" },
-  { import = "astrocommunity.pack.bash", branch = "v4" },
-  { import = "astrocommunity.pack.terraform", branch = "v4" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.toml" },
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.terraform" },
 
   -- editing support
-  { import = "astrocommunity.editing-support.todo-comments-nvim", branch = "v4" },
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
   -- git
-  { import = "astrocommunity.git.octo-nvim", branch = "v4" },
+  { import = "astrocommunity.git.octo-nvim" },
 
-  { import = "astrocommunity.project.nvim-spectre", branch = "v4" },
-  { import = "astrocommunity.diagnostics.trouble-nvim", branch = "v4" },
-  { import = "astrocommunity.editing-support.zen-mode-nvim", branch = "v4" },
-  -- { import = "astrocommunity.lsp.lsp-inlayhints-nvim", branch = "v4" },
+  { import = "astrocommunity.project.nvim-spectre" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.editing-support.zen-mode-nvim" },
 
   -- Change option table for imported stuff
   {
