@@ -1,15 +1,19 @@
 {
   "dbg!()": {
     "prefix": "dbg",
-    "body": [
-      "dbg!($1);"
-    ]
+    "body": ["dbg!($1);"]
   },
   "File Property": {
     "prefix": "fpid",
-    "body": [
-      "FilePropertyId::$1"
-    ]
+    "body": ["FilePropertyId::$1"]
+  },
+  "File Id": {
+    "prefix": "fid",
+    "body": ["FileId::new()"]
+  },
+  "User Id": {
+    "prefix": "uid",
+    "body": ["UserId::new()"]
   },
   "File Property builder new": {
     "prefix": "fpbn",
@@ -29,5 +33,20 @@
     "scope": "rust",
     "prefix": "sleep",
     "body": "std::thread::sleep(std::time::Duration::from_secs($1));"
+  },
+  "Tokio sleep": {
+    "scope": "rust",
+    "prefix": "tokiosleep",
+    "body": "tokio::time::sleep(tokio::time::Duration::from_millis(1)).await;"
+  },
+  "Tokio Test": {
+    "scope": "rust",
+    "prefix": "tokiotest",
+    "body": [
+      "#[tokio::test]",
+      "async fn $1() -> EmptyTestResult {",
+      "    Ok(())",
+      "}\n"
+    ]
   }
 }

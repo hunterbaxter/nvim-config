@@ -12,15 +12,17 @@ return {
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
   -- Langs
   -- Langs
+  { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.html-css" },
-  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.terraform" },
 
   -- editing support
@@ -31,6 +33,8 @@ return {
   { import = "astrocommunity.project.nvim-spectre" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
+
+  { import = "astrocommunity.motion.grapple-nvim" },
 
   -- Change option table for imported stuff
   {
