@@ -35,6 +35,8 @@ return {
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
 
   { import = "astrocommunity.motion.grapple-nvim" },
+  { import = "astrocommunity.markdown-and-latex.vimtex" },
+  -- { import = "astrocommunity.completion.copilot-cmp" },
 
   -- Change option table for imported stuff
   {
