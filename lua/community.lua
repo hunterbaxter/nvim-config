@@ -22,6 +22,7 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.scala" },
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.terraform" },
 
@@ -30,7 +31,7 @@ return {
   -- git
   { import = "astrocommunity.git.octo-nvim" },
 
-  { import = "astrocommunity.project.nvim-spectre" },
+  { import = "astrocommunity.search.nvim-spectre" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
 
